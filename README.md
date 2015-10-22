@@ -1,2 +1,1 @@
-# dotFiles
-Dot Files
+Contains all the config files
