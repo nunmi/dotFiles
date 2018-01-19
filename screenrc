@@ -1,0 +1,37 @@
+caption always "%{= kw}%-w%{= BW}%n %t%{-}%+w %-= @%H - %LD %d %LM - %c"
+
+startup_message off
+defscrollback 30000
+altscreen on
+vbell off
+defbce on
+
+#putty config
+bindkey ^[[D prev #ctrl-left
+bindkey ^[[C next #ctrl-right
+#bindkey ^[^[OD prev #alt-left
+#bindkey ^[^[OC next #alt-right
+
+
+
+#bash config
+bindkey ^[[1;5D prev
+bindkey ^[[1;5C next
+
+
+screen -t build
+screen -t test1
+screen -t test2
+screen -t vim
+screen -t defect
+
+
+attrcolor b ".I"
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+termcapinfo xterm-color 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+termcapinfo xterm-256color 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+termcapinfo xterm-256color 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'
+term screen-256color
+
+
+
