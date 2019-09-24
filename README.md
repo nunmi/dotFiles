@@ -1,1 +1,1 @@
-Contains all the config files
+Contains config files
